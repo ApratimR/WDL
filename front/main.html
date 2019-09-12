@@ -1,0 +1,29 @@
+<!DOCTYPE html5>
+<html onscroll="smooth()">
+<head>
+	<link rel="stylesheet" type="text/css" href="project.css">
+	<script src="back.js"></script>
+	<title>practical_1</title>
+</head>
+<body>
+	<div class="topnav">
+			<a class="active">Home</a>
+			<a>News</a>
+			<a>Contact</a>
+			<a>About</a>
+	</div>
+	<div id="top">
+		Heading Top
+	</div>
+	<form method="post" action="/">
+		<div class="input_pad">
+			<div class="str_in_head">Enter the message below:</div>
+			<br>
+			<textarea class="strinput" id="strinput" name="user[message]" placeholder="enter a message here"></textarea>
+		</div>
+		<div class="totop">
+			<input type="submit" value="Send Message" onClick="send()"/>
+		</div>
+	</form>
+</body>
+</html>

@@ -1,0 +1,89 @@
+p{
+	font-family: verdana;
+	font-size: 50 px;
+	text-align: center;
+	padding-top: 60px;
+	padding-left: 15%;
+	padding-right:15%;
+}
+
+body{
+	background-color: #ede7f6;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#top{
+	font-size: 70px;
+	text-align: center;
+	padding-top: 80px;
+	color: #7e57c2
+}
+
+.topnav {
+	background-color: #311b92;
+	left:0px;
+	top: 0px;
+	right:0px;
+	position:fixed;
+	overflow: hidden;
+	padding: 2%;
+}
+
+.topnav a {
+	/*float: left;*/
+	color: #f2f2f2;
+	text-align: center;
+	padding: 10% 2%;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.topnav a:hover {
+	background-color: #d1c4e9;
+	color: black;
+}
+
+.topnav a.active {
+	background-color: #5e35b1;
+	color: white;
+}
+
+.totop{
+	float:left;
+	padding-left: 30%;
+	right: 5px;
+	bottom: 10px;
+	bottom:0;
+	position:sticky;
+}
+
+.totop input{
+	border : none;
+	background-color: #7e57c2;
+	padding: 10px;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+.strinput{
+	resize: none;
+	display: block;
+	width: 50%;
+	height: 20%;
+	margin: auto;
+	border: none;
+}
+
+.input_pad{
+padding: 5%;
+
+}
+
+.str_in_head{
+	padding-left:20% ;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #7e57c2;
+	font-size: 30px
+}
