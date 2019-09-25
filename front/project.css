@@ -76,9 +76,33 @@ html{
 	border: none;
 }
 
+.stroutput1{
+	resize: none;
+	display: block;
+	width: 40%;
+	height: 20%;
+	margin: auto;
+	border: none;
+}
+
+.keyinput{
+	resize: none;
+	display: block;
+	width: 50%;
+	height: 5%;
+	margin: auto;
+	border: none;
+}
+
 .input_pad{
 padding: 5%;
+}
 
+.output_pad{
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 5%;
+	padding-bottom: 0%;
 }
 
 .str_in_head{

@@ -6,20 +6,25 @@
 	<title>practical_1</title>
 </head>
 <body>
-	<div class="topnav">
-			<a class="active">Home</a>
-			<a>News</a>
-			<a>Contact</a>
-			<a>About</a>
-	</div>
 	<div id="top">
-		Heading Top
+		Messages below
 	</div>
 	<form method="post" action="/">
+		<div class="output_pad">
+			<br>
+			<select class="stroutput1" id="stroutput1" name="user[display1]" ></select>
+		</div>
+		
+
 		<div class="input_pad">
 			<div class="str_in_head">Enter the message below:</div>
 			<br>
 			<textarea class="strinput" id="strinput" name="user[message]" placeholder="enter a message here"></textarea>
+
+			<div class="str_in_head">Enter the key below:</div>
+			<br>
+			<textarea class="keyinput" id="keyinput" name="user[key]" placeholder="enter a key here"></textarea>
+			
 		</div>
 		<div class="totop">
 			<input type="submit" value="Send Message" onClick="send()"/>
