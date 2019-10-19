@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const datastore = require("nedb");
+const socket = require("socket.io")
 
 //the database and loading process
 const database = new datastore("chat.db");
