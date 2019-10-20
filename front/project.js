@@ -22,6 +22,7 @@ btn.addEventListener('click',function() {
 socket.on('chat',function(data){
 	if(data.session==sha256(session1.value))
 	{
+		message.value=''
 		output.innerHTML+= '<p><strong>'+data.handle+': </strong>'+data.message + '</p>'
 	}
 })
