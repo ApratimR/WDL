@@ -1,113 +1,69 @@
-p{
-	font-family: verdana;
-	font-size: 50 px;
-	text-align: center;
-	padding-top: 60px;
-	padding-left: 15%;
-	padding-right:15%;
-}
-
 body{
-	background-color: #ede7f6;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Nunito';
 }
 
-#top{
-	font-size: 70px;
-	text-align: center;
-	padding-top: 80px;
-	color: #7e57c2
+h2{
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #575ed8;
 }
 
-.topnav {
-	background-color: #311b92;
-	left:0px;
-	top: 0px;
-	right:0px;
-	position:fixed;
-	overflow: hidden;
-	padding: 2%;
+#mario-chat{
+    max-width: 600px;
+    margin: 30px auto;
+    border: 1px solid #ddd;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
+    border-radius: 2px;
 }
 
-.topnav a {
-	/*float: left;*/
-	color: #f2f2f2;
-	text-align: center;
-	padding: 10% 2%;
-	text-decoration: none;
-	font-size: 17px;
+#chat-window{
+    height: 400px;
+    overflow: auto;
+    background: #f9f9f9;
 }
 
-.topnav a:hover {
-	background-color: #d1c4e9;
-	color: black;
+#output p{
+    padding: 14px 0px;
+    margin: 0 20px;
+    border-bottom: 1px solid #e9e9e9;
+    color: #555;
 }
 
-.topnav a.active {
-	background-color: #5e35b1;
-	color: white;
+#feedback p{
+    color: #aaa;
+    padding: 14px 0px;
+    margin: 0 20px;
 }
 
-.totop{
-	float:left;
-	padding-left: 30%;
-	right: 5px;
-	bottom: 10px;
-	bottom:0;
-	position:sticky;
+#output strong{
+    color: #575ed8;
 }
 
-.totop input{
-	border : none;
-	background-color: #7e57c2;
-	padding: 10px;
+label{
+    box-sizing: border-box;
+    display: block;
+    padding: 10px 20px;
 }
 
-html{
-	scroll-behavior: smooth;
+input{
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #eee;
+    border: 0;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    font-family: Nunito;
+    font-size: 16px;
 }
 
-.strinput{
-	resize: none;
-	display: block;
-	width: 50%;
-	height: 20%;
-	margin: auto;
-	border: none;
-}
-
-.stroutput1{
-	resize: none;
-	display: block;
-	width: 40%;
-	height: 20%;
-	margin: auto;
-	border: none;
-}
-
-.keyinput{
-	resize: none;
-	display: block;
-	width: 50%;
-	height: 5%;
-	margin: auto;
-	border: none;
-}
-
-.input_pad{
-padding: 5%;
-}
-
-.output_pad{
-	padding-left: 5%;
-	padding-right: 5%;
-	padding-top: 5%;
-	padding-bottom: 0%;
-}
-
-.str_in_head{
-	padding-left:20% ;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	color: #7e57c2;
-	font-size: 30px
+button{
+    background: #575ed8;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 0 0 2px 2px;
 }

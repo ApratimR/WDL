@@ -1,34 +1,23 @@
-<!DOCTYPE html5>
-<html onscroll="smooth()">
-<head>
-	<link rel="stylesheet" type="text/css" href="project.css">
-	<script src="project.js"></script>
-	<title>Public Key chat</title>
-</head>
-<body>
-	<div id="top">
-		Messages below
-	</div>
-	<form id="main_form" method="post" action="">
-		<div class="output_pad">
-			<br>
-			<select class="stroutput1" id="stroutput1" name="user[display1]" ></select>
-		</div>
-		
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Public key chat</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+        <link href="project.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="mario-chat">
+            <h2>Public chat with key</h2>
+            <div id="chat-window">
+                <div id="output"></div>
+            </div>
+            <input id="handle" type="text" placeholder="Handle"/>
+			<input id="message" type="text" placeholder="Message"/>
+			<input id="session" type="text" placeholder="Session Name"/>
+            <button id="send">Send</button>
+        </div>
 
-		<div class="input_pad">
-			<div class="str_in_head">Enter the message below:</div>
-			<br>
-			<textarea class="strinput" id="strinput" name="user[message]" placeholder="enter a message here"></textarea>
-
-			<div class="str_in_head">Enter the key below:</div>
-			<br>
-			<textarea class="keyinput" id="keyinput" name="user[key]" placeholder="enter a key here"></textarea>
-			
-		</div>
-		<div class="totop">
-			<input type="submit" value="Send Message" onClick="send()"/>
-		</div>
-	</form>
-</body>
+    </body>
+    <script src="project.js"></script>
 </html>
