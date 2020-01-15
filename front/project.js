@@ -20,7 +20,8 @@ btn.addEventListener('click',function() {
 
 //listen
 socket.on('chat',function(data){
-	if(data.session==crypto.subtle.digest("SHA-256",session1.value))
+	if(data.session==sha256(session1.value))
+	//data.session==crypto.subtle.digest("SHA-256",session1.value)
 	{
 		message.value=''
 		output.innerHTML+= '<p><strong>'+data.handle+': </strong>'+data.message + '</p>'
