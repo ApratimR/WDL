@@ -20,13 +20,14 @@ btn.addEventListener('click',function() {
 
 //listen
 socket.on('chat',function(data){
-	if(data.session==sha256(session1.value))
+	if(data.session==crypto.subtle.digest("SHA-256",session1.value))
 	{
 		message.value=''
 		output.innerHTML+= '<p><strong>'+data.handle+': </strong>'+data.message + '</p>'
 	}
 })
 
+//the sha 256 script
 function sha256(ascii) {
 	function rightRotate(value, amount) {
 		return (value>>>amount) | (value<<(32 - amount));
@@ -123,3 +124,14 @@ function sha256(ascii) {
 	}
 	return result;
 };
+
+
+function encrypt(text,key)
+{
+
+}
+
+function decrypt(text,key)
+{
+
+}
