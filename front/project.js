@@ -21,7 +21,8 @@ btn.addEventListener('click',function() {
 //listen
 socket.on('chat',function(data){
 	if(data.session==sha256(session1.value))
-	//data.session==crypto.subtle.digest("SHA-256",session1.value)
+	//if(data.session==await crypto.subtle.digest('SHA-256',session1.value))
+	//nope web api is confusing
 	{
 		message.value=''
 		output.innerHTML+= '<p><strong>'+data.handle+': </strong>'+data.message + '</p>'
