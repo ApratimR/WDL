@@ -13,14 +13,15 @@ btn.addEventListener('click',function() {
 	socket.emit('chat',{
 		message:message.value,
 		handle:handle.value,
-		session:sha256(session1.value)
+		session:sha256(sha256(session1.value))
 	});
 });
 
 
 //listen
 socket.on('chat',function(data){
-	if(data.session==sha256(session1.value))
+	if(data.session==sha256(sha256(session1.value)))
+	//using double sha because (decryption key=sha256(session1.value))
 	//if(data.session==await crypto.subtle.digest('SHA-256',session1.value))
 	//nope web api is confusing
 	{
