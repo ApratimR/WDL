@@ -120,14 +120,5 @@ button{
 }
 
 ::-webkit-scrollbar{
-    width: 3px;
-    padding-top: 27px ;
-    padding-bottom: 27px ;
-}
-
-::-webkit-scrollbar-thumb{
-    border-radius: 2px;
-    background-color: aquamarine;
-    padding-top: 27px ;
-    padding-bottom: 27px ;
+    background: transparent;
 }
