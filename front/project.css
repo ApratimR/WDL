@@ -1,62 +1,109 @@
 body{
-    font-family: 'Nunito';
+    font-family: 'Roboto';
 }
 
-h2{
-    font-size: 18px;
-    padding: 10px 20px;
-    color: #575ed8;
-}
+
 
 #mario-chat{
-    max-width: 600px;
-    margin: 30px auto;
+    max-width: 50%;
     border: 1px solid #ddd;
     box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
     border-radius: 2px;
+    left: 1%;
+    right: 50%;
+    bottom: 10%;
+    top: 10%;
+    border-radius: 27px;
+    position: absolute;
+    border: none;
+    
 }
 
 #chat-window{
-    height: 400px;
+    height: 90%;
     overflow: auto;
-    background: #f9f9f9;
+    background: #676767;
+    border-radius: 27px;
+    border: none;
+
 }
 
 #output p{
     padding: 14px 0px;
     margin: 0 20px;
-    border-bottom: 1px solid #e9e9e9;
+    /*border-bottom: 1px solid #e9e9e9;*/
     color: #555;
-}
 
-#feedback p{
-    color: #aaa;
-    padding: 14px 0px;
-    margin: 0 20px;
 }
-
 #output strong{
     color: #575ed8;
 }
 
-label{
-    box-sizing: border-box;
+
+#handle{
+    position: absolute;
+    bottom: 5%;
+    left: 0%;
+    width: 20%;
     display: block;
-    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 2px solid #aaa;
+    border-radius: 27px;
+    outline: none;
+    padding: 8px;
 }
 
-input{
-    padding: 10px 20px;
-    box-sizing: border-box;
-    background: #eee;
-    border: 0;
+#message{
+    position: absolute;
+    bottom: 5%;
+    left: 20%;
+    width: 80%;
     display: block;
-    width: 100%;
-    background: #fff;
-    border-bottom: 1px solid #eee;
-    font-family: Nunito;
-    font-size: 16px;
+    box-sizing: border-box;
+    border: 2px solid #aaa;
+    border-radius: 27px;
+    outline: none;
+    padding: 8px;
 }
+
+
+#session_window{
+    position: absolute;
+    top: 10%;
+    width: 35%;
+    left: 60%;
+    height: 10%;
+    border: 2px solid #aaa;
+    padding: 8px;
+    border-radius: 27px;
+}
+
+#session_message{
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    transform: translateY(-50%);
+    word-wrap: break-word;
+
+}
+
+#session{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    width: 50%;
+    transform: translateY(-50%);
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid #aaa;
+    border-radius: 27px;
+    outline: none;
+    padding: 8px;
+    align-self: center;
+}
+
+
+
 
 button{
     background: #575ed8;
@@ -65,5 +112,22 @@ button{
     border: 0;
     padding: 12px 0;
     width: 100%;
-    border-radius: 0 0 2px 2px;
+    height: 5%;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 27px;
+    outline: none;
+}
+
+::-webkit-scrollbar{
+    width: 3px;
+    padding-top: 27px ;
+    padding-bottom: 27px ;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 2px;
+    background-color: aquamarine;
+    padding-top: 27px ;
+    padding-bottom: 27px ;
 }

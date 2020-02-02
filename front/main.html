@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Public key chat</title>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
-        <link href="project.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div id="mario-chat">
-            <h2>Public chat with key</h2>
-            <div id="chat-window">
-                <div id="output"></div>
-            </div>
-            <input id="handle" type="text" placeholder="Handle"/>
+	<head>
+		<meta charset="utf-8">
+		<title>Public key chat</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+		<link href="project.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div id="mario-chat">
+			<div id="chat-window">
+				<div id="output"></div>
+			</div>
+			<input id="handle" type="text" placeholder="Handle"/>
 			<input id="message" type="text" placeholder="Message"/>
+			<button id="send">Send</button>
+		</div>
+		<div id="session_window">
+			<div id="session_message">channel : </div>
 			<input id="session" type="text" placeholder="Session Name"/>
-            <button id="send">Send</button>
-        </div>
-
-    </body>
-    <script src="project.js"></script>
+		</div>
+	</body>
+	<script src="project.js"></script>
 </html>
